@@ -2,16 +2,13 @@ package com.example;
 
 public class HelloApp {
 	public static void main (String[] args) {
-		String names;
-
-       
-        if (args.length == 0) {
-            names = "World";
-        } else {
-            
-            names = String.join(", ", args);
-        }
-
-        System.out.println("Hello, " + names + "!");
+		 String message;
+	        if (args.length > 0) {
+	            String names = String.join(", ", args);
+	            message = "Hello, " + names + "!";
+	        } else {
+	            message = "Hello, World!";
+	        }
+	        System.out.println(message);
 	}
 }
